@@ -1,0 +1,39 @@
+html<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fabio & Giulia | Matrimonio</title>
+    
+    <!-- Reindirizzamento automatico al sito Joy dopo 5 secondi -->
+    <meta http-equiv="refresh" content="5;url=https://withjoy.com">
+    
+    <style>
+        body, html { 
+            margin: 0; 
+            padding: 0; 
+            width: 100%; 
+            height: 100%; 
+            overflow: hidden; 
+            background-color: #000000; /* Sfondo nero per evitare il flash bianco */
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+        }
+        video { 
+            width: 100%; 
+            height: 100%; 
+            object-fit: cover; /* Copre lo schermo del telefono o PC senza deformarsi */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Il video parte da solo (autoplay), muto (muted) per non essere bloccato dai telefoni -->
+    <video autoplay muted playsinline>
+        <source src="intro.mp4" type="video/mp4">
+        Il tuo browser non supporta i video HTML5.
+    </video>
+
+</body>
+</html>
