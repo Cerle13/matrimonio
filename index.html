@@ -5,8 +5,8 @@ html<!DOCTYPE html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fabio & Giulia | Matrimonio</title>
     
-    <!-- Reindirizzamento automatico al sito Joy dopo 5 secondi -->
-    <meta http-equiv="refresh" content="5;url=https://withjoy.com">
+    <!-- Reindirizzamento automatico al vostro sito Joy dopo 5 secondi -->
+    <meta http-equiv="refresh" content="5;url=https://withjoy.com/fabio-e-giulia">
     
     <style>
         body, html { 
@@ -15,7 +15,7 @@ html<!DOCTYPE html>
             width: 100%; 
             height: 100%; 
             overflow: hidden; 
-            background-color: #000000; /* Sfondo nero */
+            background-color: #000000; /* Sfondo nero iniziale */
             display: flex; 
             justify-content: center; 
             align-items: center; 
@@ -23,15 +23,15 @@ html<!DOCTYPE html>
         video { 
             width: 100%; 
             height: 100%; 
-            object-fit: cover; 
+            object-fit: cover; /* Adatta il video a tutto schermo senza distorcerlo */
         }
     </style>
 </head>
 <body>
 
-    <!-- Il video parte da solo (autoplay), muto (muted) per non essere bloccato dai telefoni -->
-    <video autoplay muted playsinline>
-        <source src="https://githubusercontent.com" type="video/mp4">
+    <!-- Video ottimizzato per il caricamento istantaneo e sbloccato per l'autoplay su iPhone/iOS -->
+    <video autoplay muted playsinline webkit-playsinline preload="auto">
+        <source src="intro.mp4" type="video/mp4">
         Il tuo browser non supporta i video HTML5.
     </video>
 
